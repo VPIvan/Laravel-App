@@ -29,7 +29,7 @@ Route::get('/board', function () {
     return view('board');
 });
 
-Rout::get('/events-feed', function(){
+Rout::get('events-feed/', function(){
     return '[
         {
           "title": "CSE4500 Class",
@@ -40,7 +40,7 @@ Rout::get('/events-feed', function(){
           "title": "CSE4500 Class",
           "start": "2022-02-28T17:30:00",
           "end": "2022-02-28T18:45:00"
-        },   
+        }   
       ]';
 });
 
