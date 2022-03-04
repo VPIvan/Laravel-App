@@ -17,14 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
+Route::get('/todos', function () {
     return view('todos');
 });
 
-Route::get('/', function () {
-    return view('calendar');
+Route::get('/calendar', function () {
+    return view('schedule');
 });
 
-Route::get('/', function () {
+Route::get('/board', function () {
     return view('board');
 });
