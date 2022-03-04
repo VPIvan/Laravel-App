@@ -13,9 +13,9 @@
 
 @section('backlog')
 <div class="content">
-        <div class="container-fluid">
-            <div class="row">
-  <div class="col-md-3 col-sm-6 col-12">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
     <div class="card card-row card-secondary">
       <div class="card-header">
       <h3 class="card-title">Backlog</h3>
