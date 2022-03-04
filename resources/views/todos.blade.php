@@ -1,3 +1,4 @@
+@section('plugins.Datatables', true)
 @extends('adminlte::page')
 
 @section('title', 'To Do List')
