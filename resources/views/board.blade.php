@@ -11,7 +11,7 @@
 @stop
 
 
-@section('backlog')
+@section('content')
 <div class="content">
     <div class="container-fluid">
         <div class="row">
@@ -78,9 +78,7 @@
       </div>
     </div>
   </div>
-@stop
 
-@section('todos')
   <div class="col-md-3 col-sm-6 col-12">
     <div class="card card-row card-primary">
       <div class="card-header">
@@ -101,9 +99,7 @@
       </div>
     </div>
   </div>
-@stop
 
-@section('in_progress')
   <div class="col-md-3 col-sm-6 col-12">
     <div class="card card-row card-default">
       <div class="card-header bg-info">
@@ -129,9 +125,7 @@
       </div>
     </div>
   </div>
-@stop
 
-@section('done')
   <div class="col-md-3 col-sm-6 col-12">
     <div class="card card-row card-success">
       <div class="card-header">
@@ -153,7 +147,10 @@
     </div>
   </div>
   @stop
-
+@section('js')
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+    </script>
+@stop
 <div>
 
         </div>
