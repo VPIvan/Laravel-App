@@ -22,7 +22,7 @@ Route::get('/todos', function () {
 });
 
 Route::get('/calendar', function () {
-    return view('schedule');
+    return view('calendar');
 });
 
 Route::get('/board', function () {
