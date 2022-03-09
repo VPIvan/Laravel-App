@@ -42,6 +42,7 @@ Route::get('events-feed/', function(){
           'end' => '2022-02-28T18:45:00'
         )   
     );
+    return json_encode($data);
 });
 
 Route::get('/db-migrate', function()
