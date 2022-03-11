@@ -140,26 +140,19 @@
       <a href="#" class="btn btn-tool">
       <i class="fas fa-pen"></i>
       </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-      </div>
-    </div>
   </div>
   @stop
 @section('js')
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
     </script>
 @stop
-<div>
-
-        </div>
+        <div>
+      </div>
     </div>
-
+  </div>      
 </div>
-        
-        
-        
-        
-        
-    </div>
