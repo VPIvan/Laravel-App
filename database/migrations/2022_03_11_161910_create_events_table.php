@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->date('begin');
             $table->date('finish');
+            $table->timestamp();
         });
     }
 

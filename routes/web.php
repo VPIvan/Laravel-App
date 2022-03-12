@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodoController;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,6 @@ use App\Http\Controllers\TodoController;
 |
 */
 
-Route::resource('/todos', TodoController::class);
 
 Route::get('/', function () {
     return view('welcome');
@@ -24,6 +24,8 @@ Route::get('/todos', function () {
     return view('todos');
 });
 
+Route::resource('/todos', TodoController::class);
+
 Route::get('/calendar', function () {
     return view('calendar');
 });
@@ -32,6 +34,7 @@ Route::get('/board', function () {
     return view('board');
 });
 
+/*
 Route::get('events-feed/', function(){
     $data = array(
         array(
@@ -47,6 +50,9 @@ Route::get('events-feed/', function(){
     );
     return json_encode($data);
 });
+*/
+
+Route::get('events', 'EventController@index');
 
 Route::get('/db-test', function () {
     try {         

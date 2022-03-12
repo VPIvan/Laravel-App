@@ -1,13 +1,14 @@
 <?php
 
 use Illuminate\Http\Request;
+use app\Models\Event;
 
 class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::all();
-        return view('events', compact('events'));
+        $events = Event::select('title', 'begin AS begin', 'finish AS finish')->get();
+        return json_encode( compact('events')['events']);
     }   
     
     public function create()
@@ -25,16 +26,18 @@ class EventController extends Controller
 
         $events = Event::create([
             'title' => $request->title,
-            'begin' => $request->date('begin'),
-            'finish' => $request->date('finish'),
+            'begin' => date($request->begin),
+            'finish' => date($request->finish),
         ]);
 
-        return $this->index();
+        return redirect('/calendar');
+        //possible to need calendar instead of index
     }
 
     public function show($id)
     {
-        $event= Event::find($id);
+        $events= Event::find($id);
+        return view('events.show',compact('event'));
     }
 
     public function edit($id)
