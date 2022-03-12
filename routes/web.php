@@ -52,7 +52,7 @@ Route::get('events-feed/', function(){
 });
 */
 
-Route::get('events', 'EventController@index');
+Route::get('/events', EventController::class);
 
 Route::get('/db-test', function () {
     try {         
