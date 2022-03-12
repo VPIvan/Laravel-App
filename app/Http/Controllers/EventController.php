@@ -9,7 +9,7 @@ class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::select('title', 'begin AS begin', 'finish AS finish')->get();
+        $events = Event::select('title', 'begin AS start', 'finish AS end')->get();
         return json_encode( compact('events')['events']);
     }   
     

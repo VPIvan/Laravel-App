@@ -30,6 +30,9 @@ Route::get('/calendar', function () {
     return view('calendar');
 });
 
+Route::resource('/events', EventController::class);
+
+
 Route::get('/board', function () {
     return view('board');
 });
