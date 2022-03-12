@@ -33,7 +33,7 @@ class EventController extends Controller
         ]);
 
         return redirect('/calendar');
-        //possible to need calendar instead of index
+ 
     }
 
     public function show($id)
